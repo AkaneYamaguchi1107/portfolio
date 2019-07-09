@@ -77,6 +77,11 @@ body{
   display: flex;
   list-style: none;
 }
+@media screen and (max-width: 640px) {
+  .gnav {
+    display: none;
+  }
+}
 .gnav__link {
   padding: 0 8px;
   text-decoration: none;
@@ -132,6 +137,11 @@ body{
   line-height: 1;
   letter-spacing: 2px;
 }
+@media screen and (max-width: 640px) {
+  .heading__main {
+    font-size: 24px;
+  }
+}
 .heading__sub {
   font-size:  13px;
   font-weight: normal;
@@ -143,12 +153,22 @@ body{
   max-width: 640px;
   margin: 0 auto;
 }
+@media screen and (max-width: 640px) {
+  .profile {
+    display: block;
+  }
+}
 .profile__photo {
   border-radius: 50%;
   width: 160px;
   height: 160px;
   margin-right: 24px;
   background: center/cover url(/profile.jpg);
+}
+@media screen and (max-width: 640px) {
+  .profile__photo {
+    margin: 0 auto 16px;
+  }
 }
 .profile__body {
   flex:1;
@@ -158,6 +178,11 @@ body{
   margin-bottom: 16px;
   line-height: 1;
   font-weight: bold;
+}
+@media screen and (max-width: 640px) {
+  .profile__name {
+    text-align: center;
+  }
 }
 .profile__name rt {
   font-weight: normal;
@@ -170,6 +195,11 @@ body{
   display: grid;
   gap: 24px;
   grid-template-columns: repeat(3, 1fr);
+}
+@media screen and (max-width: 640px) {
+  .grid {
+  grid-template-columns: 1fr;
+  }
 }
 .card {
   border-radius: 12px;
@@ -207,13 +237,30 @@ line-height: 1.8;
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width:640px) {
+  .footer {
+    display: block;
+  }
+}
 .footer-nav {
   display: flex;
   list-style: none;
 }
+@media screen and (max-width: 640px) {
+  .footer-nav {
+    display: block;
+    line-height: 1.8;
+    margin-bottom: 16px;
+  }
+}
 .footer-nav__item + .footer-nav__item:before {
   content: "|";
   margin: 0 8px;
+}
+@media screen and (max-width: 640px) {
+  .footer-nav__item + .footer-nav__item:before {
+    display: none;
+  }
 }
 .footer-nav__link {
   text-decoration: none;
