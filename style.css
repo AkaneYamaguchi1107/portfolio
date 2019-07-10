@@ -150,6 +150,7 @@ ul, ol {
   display: flex;
   max-width: 640px;
   margin: 0 auto;
+  margin-bottom: 24px;
 }
 @media screen and (max-width: 640px) {
   .profile {
@@ -188,6 +189,11 @@ ul, ol {
 }
 .profile__text {
   line-height: 1.8;
+}
+.twitter {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
 }
 .grid {
   display: grid;
