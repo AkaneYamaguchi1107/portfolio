@@ -22,10 +22,10 @@
     <p class="header__logo">ポートフォリオ</p>
     <ul class="gnav">
       <li class="gnav__item">
-        <a href="" class="gnav__link">プロフィール</a>
+        <a href="#profile" class="gnav__link">プロフィール</a>
       </li>
       <li class="gnav__item">
-        <a href="" class="gnav__link">スキルセット</a>
+        <a href="#skill" class="gnav__link">スキルセット</a>
       </li>
       <li class="gnav__item">
         <a href="" class="gnav__link">仕事の相談</a>
@@ -35,10 +35,10 @@
   <div class="hero">
     <div class="container">
       <p class="hero__message">はじめてのWebサイト</p>
-      <a href="" class="button button--lg button--white">お問合わせ</a>
+      <a href="#contact" class="button button--lg button--white">お問合わせ</a>
     </div>
   </div>
-  <div class="section ">
+  <div id="profile" div class="section ">
     <div class="container">
       <h2 class="heading">
         <span class="heading__main">PROFILE</span>
@@ -59,7 +59,7 @@
       </div>
     </div>
   </div>
-  <div class="section section--light">
+  <div id="skill" div class="section section--light">
     <div class="container">
       <h2 class="heading">
         <span class="heading__main">SKILL</span>
@@ -153,7 +153,7 @@
         <span class="heading__main">CONTACT</span>
         <span class="heading__sub">お問い合わせ</span>
       </h2>
-      <form class="contact">
+      <div id="contact" form class="contact">
         <label for="name" class="contact__label">名前<span class="required">*</span></label>
         <input type="text" name="name" id="name" class="input" autocomplete="name" required>
         <label for="email" class="contact__label">メールアドレス<span class="required">*</span></label>
@@ -163,7 +163,8 @@
         <div class="contact__footer">
           <button type="submit" class="button button--sm">送信</button>
         </div>
-      </form>
+        </form>
+      </div>
     </div>
   </div>
   <footer class="footer">
