@@ -206,10 +206,12 @@ ul, ol {
   display: grid;
   gap: 24px;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows:repeat(2, 1fr);
 }
 @media screen and (max-width: 640px) {
   .grid {
   grid-template-columns: 1fr;
+  grid-template-rows:repeat(8, 1fr);
   }
 }
 .card {
@@ -244,6 +246,7 @@ line-height: 1.8;
   background: #fff;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
 }
 @media screen and (max-width: 640px) {
   .movie {
@@ -280,16 +283,19 @@ iframe {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 160px 1fr;
+  grid-template-rows: repeat(4, auto);
   gap: 16px;
 }
 @media screen and (max-width:640px) {
   .contact {
   grid-template-columns: 1fr;
+  grid-template-rows: repeat(9, auto);
   }
 }
 .contact__label {
   text-align: right;
   padding-top: 10px;
+  display: block;
 }
 @media screen and (max-width:640px) {
   .contact__label {
