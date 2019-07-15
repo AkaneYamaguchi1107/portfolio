@@ -1,0 +1,11 @@
+.hero {
+  background: center/cover url(/hero.jpg);
+  padding: 280px 0;
+  color: #fff;
+  &__message {
+    font-size: 24px;
+    font-weight: bold;
+    line-height:  1.8;
+    margin-bottom:  32px;
+  }
+}

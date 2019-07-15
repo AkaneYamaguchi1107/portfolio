@@ -1,0 +1,31 @@
+.footer {
+  padding: 16px;
+  border-top: 1px solid rgba(0,0,0, .12);
+  color: rgba(0,0,0, .6);
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  @include sp {
+    display: block;
+  }
+  &-nav {
+    display: flex;
+    list-style: none;
+    @include sp {
+      display: block;
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+  }
+  &-nav__item + &-nav__item:before {
+    content: "|";
+    margin: 0 8px;
+    @include sp {
+      display: none;
+    }
+  }
+  &-nav__link {
+    text-decoration: none;
+    color: inherit;
+  }
+}
