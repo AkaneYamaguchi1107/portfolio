@@ -1,4 +1,4 @@
-@mixin pc {
+@mixin sp {
   @media screen and (max-width: $sp-width) {
     @content;
   }
